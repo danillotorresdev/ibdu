@@ -1,0 +1,126 @@
+.commonQuestions{
+    padding: 2.5em 0;
+}
+
+.accordion{
+    border-radius: 0; 
+}
+
+.card{
+    border:0;
+    &--header{
+        background-color: #f6f6f6;
+        padding: 2.5em 1em;
+    }
+    &--body{
+        box-shadow: 12px -3px 15px -4px rgba(148, 208, 255, 0.22), -12px 3px 8px -4px rgba(148, 208, 255, 0.22);
+        padding: 1.5em;
+        
+    }
+} //card
+
+.linkCard{
+    font-size: 20px;
+    text-align: left;
+    white-space: inherit;
+    color: $primary-color;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    &:hover{
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+
+    &--title{
+        width: 60%;
+    }
+    &--symbol{     
+        width: 40%;       
+        text-align: right;
+        position: relative;
+        &::before{
+            content: '';
+            background-image: url(./assets/images/less_blue.png);
+            background-repeat: no-repeat;
+            display: block;
+            height: 25px;
+            width: 25px;
+            background-position: center center;
+            position: absolute;
+            right: 0px;
+            top: 25px;
+            bottom: 0;
+            margin: auto;
+            -webkit-transition: .1s;
+            transition: .1s;
+            padding: 1.2em;
+            border-radius: 30px;
+            box-shadow: 1px 7px 17px 1px rgba(40, 40, 40, 0.44);
+        }            
+    }
+
+    &.collapsed{
+        .linkCard--symbol{
+            &::before{
+                content:'';
+                background-image: url(./assets/images/plus_blue.png);       
+                background-repeat: no-repeat;
+                display: block;
+                height: 25px;
+                width: 25px;
+                background-position: center center;
+                position: absolute;
+                right: 0px;
+                top: 25px;
+                bottom: 0;
+                margin: auto;
+                -webkit-transition: .1s;
+                transition: .1s;
+                padding: 1.2em;
+                border-radius: 30px;
+                box-shadow: 1px 7px 17px 1px rgba(40, 40, 40, 0.44);           
+            }
+            
+        }
+    }
+
+
+}
+
+.accessTolib{
+    &--title{
+        color: $primary-color;
+        font-size: $h3;
+    }
+    &--img{
+        height: 300px;
+        width: 440px;
+        object-fit: cover;
+       
+    }
+    &--paragraph{
+        width: 100%;
+        color: $primary-color;
+    }
+}
+
+.videoArea{
+    &--title{
+        font-size: $h3;
+        color:$secondary-color;
+    }
+    &--paragraph{
+        width: 84%;
+        color: $secondary-color;
+    }
+}
+
+@media(min-width: 720px){
+    .accessTolib{
+        &--paragraph{
+            width: 84%;
+        }
+    }
+}

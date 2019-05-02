@@ -1,0 +1,37 @@
+.categorySearch{
+    &--title{
+        color: $primary-color;
+        font-size: $h2;
+        padding: 1em .5em;
+    }
+    .dateBtn{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+@media(min-width: 720px){
+    .categorySearch{
+        .cardHorizontal{
+            width: 20em;
+            margin: .5em;  
+            .cayrdHorizontal--cardBod {
+                height: 314px;
+            }          
+        } 
+    }
+}
+
+@media(min-width: 1140px){
+    .categorySearch{
+        .cardHorizontal{
+            width: initial;
+            margin: initial;  
+            .cayrdHorizontal--cardBod {
+                height: initial;
+            }          
+        } 
+    }
+}

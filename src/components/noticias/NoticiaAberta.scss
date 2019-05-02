@@ -1,0 +1,114 @@
+.news{
+    &--title{
+        font-size: $h2;
+        color: $primary-color;
+        padding-bottom: .7em;
+    }
+    &--textContent{
+        padding-top: 2.5em;
+        width: 90%;
+        img{
+            max-width: 100%;
+        }
+    }
+    &--sharedButtons{
+        .buttom{
+            width: 100%;
+            margin-bottom: .5em;
+        }
+    }
+}
+
+.newsSidebar{
+    width: 100%;
+    &--title{
+        font-size: 25px;
+        color: $primary-color;
+    }
+}
+
+.ItemBoxSidebar{
+    &--title{
+        font-size: 20px;
+        color: $primary-color;
+    }
+    &--paragraph{
+        color: $primary-color;
+    }
+}
+
+.categorySideBar{
+    &--title{
+        color: $primary-color;
+        font-size: $h4;
+    }
+    &--item{
+        text-decoration: none;
+    }
+    &--list{
+        list-style: none;
+
+    }
+    &--link{
+        color: $primary-color;
+        &:hover{
+            color: $primary-color;
+            text-decoration: none;            
+        }
+    }
+}
+.singleFluidPost{
+    max-height: 400px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
+
+.relatedPosts2{
+    .verticalCard--cardBody{
+        height: 150px;
+        margin-bottom: 1em;
+    }
+}
+@media(min-width: 720px){
+    .ItemBoxSidebar{
+        width: 50%;
+        padding: .3em;
+    }
+    .relatedPosts2{
+        .verticalCard__big2 {
+            width: 14.5rem;
+        }
+        .verticalCard--cardBody {
+            height: 147px;
+        }
+    }
+}
+@media(min-width: 1140px){
+    .relatedPosts2{
+        .verticalCard__big2 {
+            width: 23rem;
+        }
+        .verticalCard--cardBody {
+            height: 110px;
+        }
+    }
+    .ItemBoxSidebar{
+        width: initial;
+        padding: initial;
+    }
+    .news{
+        &--sharedButtons{
+            .buttom{
+                width: initial;
+                margin-bottom: initial;
+            }
+        }
+    }
+    .relatedPosts2{
+        .verticalCard--cardBody{
+            margin-bottom: initial;
+        }
+    }
+
+}

@@ -1,0 +1,18 @@
+.searchField{
+    padding: 2em 0;
+    &--desktop{
+        display: none;
+    }
+
+}
+
+@media(min-width: 720px){
+    .searchField{
+        &--desktop{
+            display: block;
+        }
+        &--mobile{
+            display: none;
+        }
+    }
+    }

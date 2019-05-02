@@ -1,0 +1,31 @@
+.titleWithList{
+    &--title{
+        color: $clear;
+        font-size: 12px;
+        margin-bottom: 1em;
+        text-transform: uppercase;
+        font-weight: $fontWeight-bold;
+    }
+    .list{
+        list-style: none; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;     
+    }
+    .itemList{
+        &--linkList{
+            color: #fff;
+            font-size: 12px;
+        }
+    }
+}
+
+@media(min-width: 720px){
+    .titleWithList{
+        .list{
+            display: inherit;
+            flex-direction: inherit;
+            align-items: inherit;
+        }
+    }
+}

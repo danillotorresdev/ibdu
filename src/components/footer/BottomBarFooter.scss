@@ -1,0 +1,76 @@
+.bottomBarFooter{
+    background-image: url(./assets/images/bg-bottomBarFooter.jpg);
+    min-height: 622px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+
+    &--inputNewsletter{
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border: 1px solid $clear;
+        background: transparent;
+        padding: .4em 1em;
+        color: #fff;
+    }
+    &--btnNewsletter{
+        background-color: $clear;
+        color: $primary-color;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: $fontWeight-bold;
+        padding: .7em 2em;
+        position: relative;
+    }
+
+    @media(min-width: 992px){
+        background-size: inherit;
+        &--btnNewsletter{
+            position: absolute;
+            right: -40px;
+        }
+    }
+    @media(min-width: 1140px){
+        background-size: cover!important;
+    }
+    .classTitleTextBtn{
+        &--title{
+            font-size: 12px;
+        }
+        &--text{
+            font-size: 12px;
+        }
+    }
+    .navbar-brand{
+        padding-bottom: 1em!important;
+        img{
+            // width: 65px;
+        }
+    }
+} 
+
+@media(min-width: 720px){
+    .bottomBarFooter{
+        padding-top: 30px;
+        min-height: 284px;
+        .classTitleTextBtn{
+            text-align: left;
+        }
+    }
+}
+@media(min-width: 1140px){
+    .bottomBarFooter {
+        min-height: 200px;
+        height: 200px;
+        padding-top: 40px;
+        .classTitleTextBtn{
+            text-align: left;
+        }
+    }
+    .navbar-brand{
+        padding-bottom: inherit!important;
+    }
+}

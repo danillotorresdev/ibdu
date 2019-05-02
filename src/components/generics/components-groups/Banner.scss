@@ -1,0 +1,16 @@
+.banner{
+    background-image: url(./assets/images/BG-QUEM-SOMOS.jpg);
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    height: 430px;
+    &--oQueFazemos{
+        background-image: url(./assets/images/BG-O-Que-Fazemos.jpg);
+    }
+    &--oQuePensamos{
+        background-image: url(./assets/images/BG-O-Que-pensamos.jpg);
+    }
+    &--contato{
+        background-image: url(./assets/images/bannerContato.jpg);
+    }
+    
+}

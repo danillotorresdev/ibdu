@@ -1,0 +1,55 @@
+@import '../main/_theme';
+@import "../main/mixinsAndPlaceholders.scss";
+
+@import './header/Header.scss';
+@import './header/HeaderTopBar.scss';
+
+@import "./generics/small-components/BgShadowImg.scss";
+@import "./generics/small-components/TitleWithList.scss";
+
+@import "./generics/components-groups/TitleTextBtn.scss";
+@import './generics/components-groups/Nav.scss';
+@import "./generics/components-groups/CardHorizontal.scss";
+
+@import "./generics/small-components/MetaDate.scss";
+@import './generics/small-components/InputSearch';
+@import './generics/small-components/SocialNetworkings.scss';
+@import './footer/Footer.scss';
+
+@import "../components/footer/CopyrightBar.scss";
+
+@import "../components/generics/slick/SlickCarouselAccessToLibrary.scss";
+@import "../components/generics/slick/SlickCarouselAccessToManyPages.scss";
+@import '../components/generics/components-groups/Banner.scss';
+@import "../components/generics/small-components/Timeline.scss";
+
+
+@import './home/Home.scss';
+
+@import './quem-somos/QuemSomos.scss';
+@import '../components/generics/small-components/Member.scss';
+@import '../components/generics/components-groups/VerticalCard.scss';
+@import '../components/generics/slick/SlickCarouselPartners.scss';
+@import '../components/quem-somos/ContactForm.scss';
+@import '../components/generics/small-components/MenuItem.scss';
+
+@import '../components/o-que-fazemos/OQueFazemos.scss';
+@import '../components/generics/components-groups/AccessToLibrary.scss';
+@import '../components/generics/components-groups/RowImgContent.scss';
+@import '../components/o-que-pensamos/OQuePensamos.scss';
+@import './generics/small-components/Buttom.scss';
+@import '../components/generics/components-groups/SimpleHorizontalCard.scss';
+@import '../components/biblioteca/Biblioteca.scss';
+@import '../components/generics/components-groups/AccessToManyPages.scss';
+@import '../components/noticias/Noticias.scss';
+
+@import '../components/contato/Contato.scss';
+
+@import '../components/perguntas-frequentes/PerguntasFrequentes.scss';
+@import '../components/noticias/NoticiaAberta.scss';
+@import '../components/generics/small-components/SearchFieldSidebar.scss';
+@import '../components/generics/components-groups/AccessToExplanatoryVideos.scss';
+@import '../components/category-search/CategorySearch.scss';
+
+@import '../components/footer/TopBarFooter.scss';
+@import '../components/footer/BottomBarFooter.scss';

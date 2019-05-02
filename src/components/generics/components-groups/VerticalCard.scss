@@ -1,0 +1,89 @@
+.news{
+    padding: 2.5em 0 1.5em 0;
+}
+.verticalCard{
+    width: 19rem;
+    margin: 0 auto;    
+    transition: 1s;
+    &__fullWidth{
+        width: 100%;
+    }
+    &__halfImgHeight{
+        object-fit: cover;
+        height: 470px;
+    }
+    &__smallHeightImg{
+        object-fit: Cover;
+        height: 170px;
+    }
+    &__intermediateHeightImg{
+        object-fit: Cover;
+        height: 200px;
+    }
+    &__lowOpacity{
+        opacity: 0.4;
+    }
+    &__big{
+        width: inherit;
+    }
+    &__big2{
+        width: 23rem;
+
+    }
+    &__small{
+        width: 16rem;
+    }
+    &--cardBody{
+        background-color: $primary-color;
+        padding: 1em 2em;
+        color: $clear;
+        line-height: 1.2;
+        &__green{
+            background-color: $txtOrBg-green;
+        }
+        &__orange{
+            background-color: $secondary-color;
+        }
+        &__white{
+            background-color: white;
+        }
+    }
+
+    &--title{
+        font-size: 16px;
+        &__orange{
+            color: $secondary-color;
+        }
+    }
+    &--text{
+        font-size: 14px;
+        &__blue{
+            color: $primary-color;
+        }
+    }
+    
+}
+
+.slick-center{
+    margin: 0 .5em;    
+    .verticalCard{
+        opacity: 1!important;
+        transition: 1s;
+         width: 20.6rem;
+         &__big{
+            width: 21rem;
+        }
+    }
+} 
+
+.relatedPosts2{
+    padding-bottom: 2.5em;
+}
+
+@media(min-width: 720px){
+    .verticalCard{
+        &__big{
+            width: 21rem;
+        }
+    }
+}

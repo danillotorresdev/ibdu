@@ -1,0 +1,39 @@
+.rowImgContent{
+    &--img{
+        height: 330px;
+        width: 100%;
+        object-fit: cover;
+    }
+    &--imgLeft {
+        padding-right: 15px;
+    }
+    &--imgRight {
+        padding-left: 15px;
+    }
+    .classTitleTextBtn{
+        padding-bottom: 2.5em;
+    } 
+}
+@media(min-width: 720px){
+    .rowImgContent{
+        &--imgRight{
+            padding-left: 2em!important;
+        }
+
+    }
+}
+@media(min-width: 1140px){
+    .rowImgContent{
+        .classTitleTextBtn{
+            padding-bottom: inherit;
+        }
+        &--imgRight {
+            padding-left: 100px!important;
+        }
+        &--imgLeft {
+            padding-right: 100px;
+        }
+    }
+}
+
+

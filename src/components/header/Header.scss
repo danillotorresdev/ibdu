@@ -1,0 +1,53 @@
+.containerBackToTop {
+    position: fixed;
+    right: -100px;
+    bottom: 20px;
+    transition: right 0.5s;
+    cursor: pointer;
+    background-color: white;
+    font-size: 20px;
+    padding: 10px;
+    z-index: 1;
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    border: 1px solid $primary-color;
+    &:focus{
+        outline-color: transparent;
+    }
+    &::before{
+        content: '';
+        background-image: url(./assets/images/backToTop.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        left: 11px;
+        bottom: -22px;
+        top: 0;
+        margin: auto;
+    }
+}
+
+.backToTopTransition {
+    right: 20px;
+}
+
+li.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.menu{
+    .active{
+        display: block;
+    }
+    .inactive{
+        display: none;
+    }
+}
+
+@media(min-width: 1199px){
+    .inactive{
+        display: block!important;
+    }
+}

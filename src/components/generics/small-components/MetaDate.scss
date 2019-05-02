@@ -1,0 +1,14 @@
+.meta-date{
+    background-color: $primary-color;
+    position: absolute;
+    left: 35px;
+    color: $clear;
+    top: 0;
+    padding: 9px 14px;
+    &--orange{
+        background-color: $secondary-color;
+    }
+    &--alignLeft{
+        left: 13px;
+    }
+} 

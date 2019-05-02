@@ -1,0 +1,85 @@
+.cardHorizontal{
+    border: none;
+    &__border{
+        border-top: 1px solid #bbbbbb;
+        border-bottom: 1px solid #bbbbbb;
+    }
+    &--metaDate{
+        color: $primary-color;
+        font-size: $h4;
+        font-weight: $fontWeight-Medium;
+    }
+    &--cardImg{
+        flex-basis: 40%;
+        &__small{
+            flex-basis: 35%;
+        }
+        &__half{
+            flex-basis: 50%;
+        }
+    }
+    &--cardBody{
+        flex-basis: 60%;
+        &__small{
+            flex-basis: 65%;
+        }
+        &__half{
+            flex-basis: 50%;
+        }
+    }
+    &--dadImg{
+        width: 75%;
+    }
+    &--imgClass{
+            object-fit: cover;
+            height: 216px;
+            width: 100%;
+            &__height{
+                height: 167px;
+            }
+            &__width{
+                width: 100%;
+            }
+            &__autoWidth{
+                width: 100%;
+            }
+            &__large{
+                width: 760px;
+            }    
+    }
+
+    &__leftMetaDate{
+        .meta-date{
+            left: 25px;
+        }
+    }
+    .card-text{
+        height: 100%;
+    }
+    .classTitleTextBtn{
+        height: 100%;
+    }
+    .classTitleTextBtn--title{
+        flex:3;
+    }
+    .classTitleTextBtn--text {
+        flex:1;
+    }
+
+    .classTitleTextBtn--btn{
+        // flex:1;
+        display: flex;
+        align-items: flex-end;
+    }
+
+}
+
+@media(min-width: 720px){
+    .cardHorizontal{
+        &--imgClass{
+            &__autoWidth{
+                width: auto;
+            }
+        }   
+    }
+}

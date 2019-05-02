@@ -1,0 +1,152 @@
+.newsHome{
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+
+    &--titleImg{
+        color: $clear;
+        font-weight: $h3;
+        width: 70%;
+    }
+    &--video{
+        height: auto;
+    }
+    &--videoBG{            
+            height: 100% ;
+            width: 100%;
+            background-size: cover;
+            position: absolute;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-position: center center;
+     
+    }
+    &--iframeVideo{
+        height: 216px;
+    }
+
+}
+
+.accessToTwoPages{    
+    background-image:  url(./assets/images/bgAccessToTwoPages.jpg);
+    background-repeat: no-repeat; 
+    background-position: center center;
+    min-height: 649px;
+    background-size: 100% 100%;
+    padding-top: 2.5em;
+    padding-bottom: .5em;
+    .row{
+        padding-top: .5em;
+    }
+    &--imgLeft{
+        &__img{
+            object-fit: cover;
+            width: 100%;
+            height: 265px;
+            padding-right: inherit;
+        }
+    }
+
+    &--imgRight{
+        padding-left: 100px;
+        &__img{
+            object-fit: cover;
+            width: 100%;
+            height: 265px;
+        }
+    }
+
+
+}
+
+
+
+.accessToExplanatoryVideos{
+    background-image: url(./assets/images/capacitacao-educacao.png);   
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+    .cardHorizontal__border {
+        border-top: 1px solid #3a952a;
+        border-bottom: 1px solid #3a952a;
+        background: #ffffffa1;
+    }
+
+}
+
+.eventsArea{
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+    position: relative;
+    &--dadImg{
+        height: 230px;
+    }
+    .bgShadowImg{
+        height: 100%;
+    }
+    &--imgLeft{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+        
+    .cardHorizontal{
+        position: relative;
+        
+    }
+   
+}
+
+//540px	720px	960px	1140px
+@media(min-width: 720px){
+    .accessToTwoPages{
+        min-height: 686px;
+    }
+}
+@media(min-width: 1140px){
+    .newsHome{
+        .classTitleTextBtn{
+            align-items: flex-start;
+            text-align: left;      
+        }
+        .cardHorizontal--imgClass{
+            height: 100%;
+        }
+    }
+    .accessToTwoPages{
+        min-height: 649px;
+        .classTitleTextBtn{
+            align-items: flex-start;
+            text-align: left;      
+        }
+        &--txt1{
+            padding-left:15px;
+        }
+
+        &--imgLeft{
+            &__img{
+                padding-right: 30px;
+            }
+        }
+
+        }
+        .newsHome{
+            &--video{
+                height: 460px;
+            }
+            &--iframeVideo{
+                height: 100%;
+            }
+        }
+        .eventsArea{
+            &--dadImg{
+                height: 458px;
+            }
+            .bgShadowImg{
+                width: 100%!important;
+            }
+        }
+}

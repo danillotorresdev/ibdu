@@ -1,0 +1,53 @@
+.accessToLibrary{
+    &__reverse{
+        flex-direction: row-reverse;        
+    }
+    &--imgLeft{
+        padding-right: 15px;
+        display: none;
+        &__img{
+            object-fit: cover;
+            width: 100%;
+            height: 265px;
+        }
+    }
+
+    &--imgRight{
+        padding-left: 15px;
+        &__img{
+            object-fit: cover;
+            width: 100%;
+            height: 265px;
+        }
+    }
+
+
+}
+@media(min-width: 720px){
+    .accessToLibrary{
+        &--imgLeft{
+            padding-right: 15px;
+            display: block;
+        }
+    }
+}
+@media(min-width: 1140px){
+    .accessToLibrary{
+        &--align{
+            padding-right: 45px;
+        }
+        &--imgLeft{
+            padding-right: 100px;
+            display: block;
+        }
+
+        &--imgRight{
+            padding-left:30px;
+            &__img{
+                object-fit: cover;
+                width: 100%;
+                height: 265px;
+            }
+        }
+    }
+}

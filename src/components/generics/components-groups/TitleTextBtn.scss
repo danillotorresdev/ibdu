@@ -1,0 +1,181 @@
+.classTitleTextBtn{    
+    align-items: center;
+    text-align: center;        
+
+    &__centerAlignment{
+        margin: 0 auto;
+    }
+    &__rightAlignment{
+        text-align: center;
+    }
+    &--title{
+        color: $primary-color;
+        width:100%;
+        margin-bottom: 1.2em;
+        font-weight: $fontWeight-bold;
+        font-size: $h3;    
+        line-height: 1.1;
+        &__orange{
+            color: $secondary-color;
+        }
+        &__white{
+            color: $clear;
+        }
+        &__green{
+            color: $txtOrBg-green;
+        }
+        &__textUppercase{
+            text-transform: uppercase;
+        }
+        &__smallFont{
+            font-size: 1.4em;  
+        }
+        &__smallerFont{
+            font-size: 14px;
+        }
+        &__fontUppercase{
+            text-transform: uppercase;
+        }
+        &__smallWidth{
+            width: 100%;
+        }
+        &__secondWidth{
+            width: 100%;
+        }
+        &__halfWidth{
+            width: 100%;
+        }
+        &__intermediatedWidth{
+            width: 100%;
+        }
+
+        &__fullWidth{
+            width:100%;
+        }
+        &__fontWeightRegular{
+            font-weight: $fontWeight-regular;
+        }
+        &__section{
+            font-size: $h1;
+            margin-bottom: .7em;
+        }
+    }
+    &--text{
+        color: $primary-color;
+        margin-bottom: 2.2em;
+        font-size: 16px;  
+        &__orange{
+            color: $secondary-color;
+        }
+        &__white{
+            color: $clear;
+        }  
+        &__intermediatedWidth{
+            width: 100%;
+        }
+        &__section{
+            font-size: $p-section;
+        }
+    }
+    &--btn{
+        background-color: $primary-color;
+        padding: .27em 1.1em;
+        border-radius: 5px;
+        color: $primary-color;
+        text-transform: uppercase;        
+        
+        &:hover{
+            color: $clear;
+            background-color: $secondary-color;
+            text-decoration: none;
+        }
+        &__smallTxt{
+            font-size: 14px;
+        }
+        &__orange{
+            background-color: $secondary-color;
+        }
+        &__white{
+            background-color: $clear;
+        }
+        &__green{
+            background-color: $txtOrBg-green;
+        }
+        &__noBg{
+            background-color: inherit;
+       }
+        &__bgHoverBlue{
+            &:hover{
+                background-color: $secondary-color; 
+            }
+        }
+        &__bgHoverOrange{
+            &:hover{
+                background-color: $primary-color; 
+            }
+        }
+        &__bgHoverNone{
+            &:hover{
+                background-color: inherit; 
+            }
+        }
+        &__txtHoverOrange{
+            &:hover{
+                color: $secondary-color; 
+                text-shadow: -.5px 1px #c6c6c682;
+
+            }
+        }
+        &__txtHoverBlue{
+            &:hover{
+                color: $primary-color; 
+            }
+        }
+        &__textWhite{
+            color: $clear;
+        }
+        &__textOrange{
+            color: $secondary-color;
+        }
+    }
+}
+
+
+
+
+
+
+
+//540px	720px	960px	1140px
+@media(min-width: 1140px){
+    .classTitleTextBtn{        
+        align-items: flex-start;
+        text-align: left;      
+
+        &__centerAlignment{
+            margin: 0 auto;
+        }
+        &__rightAlignment{
+            text-align: right;
+        }
+        &--title{
+            &__smallWidth{
+                width: 35%;
+            }
+            &__secondWidth{
+                width: 60%;
+            }
+            &__halfWidth{
+                width: 50%;
+            }
+            &__intermediatedWidth{
+                width: 70%;
+            }
+        }
+        &--text{
+            &__intermediatedWidth{
+                width: 70%;
+            }
+        }
+    }
+}

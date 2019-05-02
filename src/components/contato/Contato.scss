@@ -1,0 +1,29 @@
+.contactBanner{
+    height: 835px;
+    background-size: cover;
+    overflow: hidden;
+    padding: 2.5em 0;
+
+    &--paragraph{
+        text-align: center;
+        color: $clear;        
+    }
+    .notification-container{
+        top: 260px;
+    }
+}
+
+@media(min-width: 720px){
+    .contactBanner{
+        height: 630px;
+        &--paragraph{
+            text-align: left;
+        }
+        .classTitleTextBtn{
+            width: 80%;
+        }
+        .cidadeField{
+            width: 50%;
+        }
+    }
+}

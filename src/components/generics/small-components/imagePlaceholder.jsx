@@ -1,0 +1,1 @@
+export default "http://www.ibdu.org.br/api/wp-content/uploads/2019/03/01.-Arquivos.jpg"

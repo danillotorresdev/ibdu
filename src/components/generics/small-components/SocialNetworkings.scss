@@ -1,0 +1,49 @@
+.socialNetworkings{
+    align-items: center!important;
+    &__btnLink{
+        display: flex;
+    }
+    &--desktop{
+        display: none!important;
+    }
+    &--icon{
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-color: $secondary-color;
+        background-repeat: no-repeat;
+        background-position: center center;
+        border-radius: 40px;
+        margin-left: .2em;
+
+        &__fb{
+            background-image: url(./assets/images/facebook-logo.png);
+        }
+        &__insta{
+            background-image: url(./assets/images/instagram.png);
+        }
+        &__yt{
+            background-image: url(./assets/images/youtube.png);
+        }
+        &__BGBlue{
+            background-color: $primary-color;
+        }
+
+    }
+}
+
+@media(min-width: 1140px){
+    .socialNetworkings{
+        &--desktop{
+            display: flex!important;
+        }
+        &--mobile{
+            display: none!important;
+        }
+    }
+}
+@media(min-width: 1140px){
+    .socialNetworkings{
+        align-items: inherit;
+    }
+}

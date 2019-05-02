@@ -1,0 +1,297 @@
+.filterSearch{
+    padding-top: 2.5em;
+    &--textInput{
+        border: none;
+        border-bottom: 1px solid #ccc;
+        border-radius: inherit; 
+        &:active{
+            outline:0px !important;
+            -webkit-appearance:none;
+        }
+        &:focus{
+            border-bottom: 1px solid #ccc;
+        }
+    }
+    &--selectDropdown{
+        height: 3em;
+        border: 1px solid $txtOrBg-green;
+        color: $txtOrBg-green;        
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-appearance: none;
+        -moz-appearance: none;        
+        background-image:
+            linear-gradient(45deg, transparent 50%, $txtOrBg-green 50%),
+            linear-gradient(135deg, $txtOrBg-green 50%, transparent 50%);
+        background-position:
+            calc(100% - 20px) calc(1em + 2px),
+            calc(100% - 15.8px) calc(1em + 2px),
+            calc(100% - .5em) .5em;
+        background-size:
+            5px 5px,
+            5px 5px,
+            1.5em 1.5em;
+        background-repeat: no-repeat;        
+        &:focus{
+        border: 1px solid $txtOrBg-green;
+        color: $txtOrBg-green;
+        }
+
+    }
+    &--box{
+        border-radius: 10px;
+        padding: 1em;
+    }
+    &--title{
+        color: $primary-color;
+    }
+    &--selectCategory{
+        position: relative;
+    }
+    &--labelCategory{
+        position: absolute;
+        top: -25px;
+        color: $txtOrBg-green;
+    }
+    &--btnSearch{
+        background-color: $primary-color;
+        color: $clear;
+        text-transform: uppercase;
+    } 
+    .notification-container{
+        top: 255px;
+    }
+}
+
+
+
+.postsOnLibraryPage{
+    padding: 2.5em 0;
+    .verticalCard{
+        margin-top: 1em;
+        margin-bottom: 1em;
+        &--cardBody{
+            height: 130px;
+        }
+        &__halfImgHeight {
+            height: 170px;
+        }
+    }
+}
+
+.brazilianMagazine{   
+    padding: 2.5em 0;
+    background-image: url(./assets/images/brazilianMagazine.jpg);
+    background-repeat: no-repeat;
+    height: 700px;
+    background-size: cover;
+    
+    background-position: center center;
+
+    &--container{
+        max-width: 890px;
+    }
+    
+    &--leftColumn{
+        background-color: #f7f4f4;
+        padding: 2.5em 15px;
+    }
+    &--rightColumn{
+        background-color: #fff;
+        padding: 2.5em 0;
+    }
+    &--RBDUImage{
+        background-image: url(./assets/images/rbdu.png);
+        background-repeat: no-repeat;
+        height: 327px;
+        width: 229px;
+        background-size: 80%;
+        background-position: center center;
+    }
+    &--img{
+        height: 200px;
+    }
+}
+
+.notesAndExpressions{
+    padding: 2.5em 0;
+    background-image:  url(./assets/images/bgAccessToTwoPages.jpg);
+    background-repeat: no-repeat;
+    height: 517px;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    &--title{
+        color: $secondary-color;
+        font-size: 36px;
+        margin-bottom: .7em;
+        font-weight: bold;
+    }
+    .verticalCard--cardBody{
+        height: 150px;
+    }
+    .classTitleTextBtn{
+        &--title{
+            padding: 0px 15px;
+        }
+        &--text{
+            padding: 0 15px;
+        }
+    }
+
+    .slick-prev{
+        left: -10px;
+        &::before {
+            content: '';
+            background-image: url(./assets/images/Seta_Esquerda_white.png);
+            background-repeat: no-repeat;
+            height: 25px;
+            width: 25px;
+            display: block;
+        }
+    }
+    .slick-next{
+        right: -13px;
+        &::before {
+        content: '';
+        background-image: url(./assets/images/Seta_Direita_white.png);
+        background-repeat: no-repeat;
+        height: 25px;
+        width: 25px;
+        display: block;
+        }
+    }
+}
+.widgetCategory{
+        position: fixed;
+        background-color: #fff;
+        left: 0;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 1.5em;
+        z-index: 2;
+        height: 76px;
+        width: 87px;
+        transition: .5s;
+        &--iconList{
+            background-image: url(./assets/images/iconList.png);
+            background-repeat: no-repeat;
+            background-color: $secondary-color; 
+            height: 40px;
+            width: 40px;
+            background-position: center center;
+            position: absolute;
+            top: 17px;
+            &__orange{
+                position: relative;
+                &::before{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    content: 'x';
+                    color: $secondary-color;
+                    border: 1px solid $secondary-color;
+                    padding: 0px 8px 2px;
+                    border-radius: 50%;
+                }
+                background-repeat: no-repeat;
+                height: 40px;
+                width: 40px;
+                background-color: $clear;
+            }
+        }
+        &__explandedArea{
+            height: auto;
+            width: 260px;
+        }
+        &__disappear{
+            opacity: 0;
+            visibility: hidden;
+            transition: .1s;
+        }
+        &__appear{
+            opacity: 1;
+            visibility: visible;
+            transition: 2s;
+        }
+
+        &--title{
+            font-size: $h3;
+            color: $txtOrBg-green;
+        }
+        &--itemList{
+            list-style: none;
+            margin-top: 1em;
+        }
+        &--link{
+            color: $txtOrBg-green;
+            text-decoration: none;
+            &:hover{
+                color: $txtOrBg-green;
+            }
+            
+        }
+
+ }
+
+
+ @media(min-width: 720px){
+    .brazilianMagazine{
+        
+        &--leftColumn{
+            padding: inherit;
+        }
+        height: 485px;
+        &--leftColumn{
+            padding: 2.5em 6em 2.5em 5em;
+        }
+        &--img{
+            height: inherit;
+        }
+
+    }
+
+    .notesAndExpressions{
+        height: 490px;
+        background-size: inherit;
+        .classTitleTextBtn{
+            align-items: center;
+            text-align: center;
+            &--title{
+                
+            }
+        }
+
+
+        .slick-next{
+            right: -35px;
+        }
+        .slick-prev{
+            left: -28px;
+        }
+    }
+    .postsOnLibraryPage{
+        .verticalCard{
+            margin-top: inherit;
+            margin-bottom: inherit;           
+            &--cardBody{
+                height: 115px;
+                padding: .5em 2em;
+                }
+            &__halfImgHeight {
+                height: 470px;
+            }
+            
+        }
+    }
+ }
+ @media(min-width: 1140px){
+    .postsOnLibraryPage{
+        .verticalCard{
+            &--cardBody{
+                padding: 1em 2em;
+            }
+        }
+    }
+ }

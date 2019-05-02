@@ -1,0 +1,23 @@
+.sliderPages{
+    position: relative;
+    &--bgSlider{
+        min-height: 550px;
+        object-fit: cover;
+    }
+    &--contentSlide{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 100%;
+    }
+
+    @media(min-width: 960px){
+        &--bgSlider{
+            min-height: 510px;
+            object-fit: cover;
+        }
+    }
+
+}

@@ -1,0 +1,46 @@
+.buttom{
+    background-color: $primary-color;
+    text-transform: uppercase;
+    color: $clear;
+    padding: .5em 2em;
+
+    &:hover{
+        color: $clear;
+    }
+    &__royalBlue{
+        background-color: #237dd2;
+    }
+    &__lightBlue{
+        background-color: #41c9eb;
+    }
+    &__noBg{
+        background-color: none;
+    }
+    &__smallFont{
+        font-size: $h5;
+    }
+    &--search-btn {
+        background: $secondary-color;
+        padding: 7px 10px;
+        border-radius: 7.5px;
+        color: #fff;
+        box-shadow: -1px 2px 14px #272727;
+        transition: .5s;
+        font-size: 14px;
+        font-weight: 300;
+        &:hover{
+            color: $clear;
+            background-color: $primary-color;
+            text-decoration: none;
+        }
+    }
+
+    &__textOrange{
+        color: $secondary-color;
+        &:hover{
+            color: $secondary-color;
+        }
+    }
+
+
+}

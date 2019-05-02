@@ -1,0 +1,21 @@
+.accessToExplanatoryVideos{
+    &--videoBG{
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            position: absolute;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+    }
+}
+
+@media(min-width: 720px){
+    .accessToExplanatoryVideos{
+        &--videoRendered{
+            height: 460px;
+        } 
+    }
+}

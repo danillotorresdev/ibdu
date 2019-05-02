@@ -1,0 +1,13 @@
+.simpleHorizontalCard{
+    border: none;
+    background-color: #f6f6f6;
+    border-radius: 0;
+    border-bottom: 1px solid #ccc!important;
+    height: 100%;
+    &--title{
+        color: $primary-color;
+    }
+    &--text{
+        color: $primary-color;
+    }
+}

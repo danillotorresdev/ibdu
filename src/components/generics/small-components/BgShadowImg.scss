@@ -1,0 +1,30 @@
+.bgShadowImg{
+    position: relative;
+    &::before{
+        content: '';
+        background: rgba(248,80,50,0);
+        background: -moz-linear-gradient(top, rgba(248,80,50,0) 0%, rgba(0,0,0,0.08) 9%, rgba(0,0,0,0.58) 69%, rgba(0,0,0,0.68) 81%, rgba(0,0,0,0.68) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(248,80,50,0)), color-stop(9%, rgba(0,0,0,0.08)), color-stop(69%, rgba(0,0,0,0.58)), color-stop(81%, rgba(0,0,0,0.68)), color-stop(100%, rgba(0,0,0,0.68)));
+        background: -webkit-linear-gradient(top, rgba(248,80,50,0) 0%, rgba(0,0,0,0.08) 9%, rgba(0,0,0,0.58) 69%, rgba(0,0,0,0.68) 81%, rgba(0,0,0,0.68) 100%);
+        background: -o-linear-gradient(top, rgba(248,80,50,0) 0%, rgba(0,0,0,0.08) 9%, rgba(0,0,0,0.58) 69%, rgba(0,0,0,0.68) 81%, rgba(0,0,0,0.68) 100%);
+        background: -ms-linear-gradient(top, rgba(248,80,50,0) 0%, rgba(0,0,0,0.08) 9%, rgba(0,0,0,0.58) 69%, rgba(0,0,0,0.68) 81%, rgba(0,0,0,0.68) 100%);
+        background: linear-gradient(to bottom, rgba(248,80,50,0) 0%, rgba(0,0,0,0.08) 9%, rgba(0,0,0,0.58) 69%, rgba(0,0,0,0.68) 81%, rgba(0,0,0,0.68) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#000000', GradientType=0 );
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+    }
+    .classTitleTextBtn {
+        position: absolute;
+        bottom: 13px;
+        left: 10px;
+    }
+    .newsHome--titleImg{
+        position: absolute;
+        bottom: 15px;
+        left: 23px;
+    }
+
+} 

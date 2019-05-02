@@ -1,0 +1,91 @@
+.contactForm{
+    &--input{
+        padding: 1.4em 1em;
+        border: none;
+        border-radius: 0;
+
+    }
+    &--btnAttr{
+        background-color: $secondary-color;
+        color: $clear;
+        padding: .5em 2em;
+    }
+    &--textArea{
+        border: none;
+        border-radius: 0;
+    }
+    &--cidade{
+        width: 50%;
+    }
+    &--estado{
+        width: 50%;
+    }
+   
+
+    &--checkTermsLabel{
+        color: $clear;
+        font-size: 12px;
+        margin-top: 1.1em;
+    }
+
+    /*style and hide original checkbox*/
+    .ckeckTerms input {
+        height: 40px;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        width: 25px;
+    }
+
+    /*position new box*/
+    input + label::before {
+        border: 2px solid;
+        content: "";
+        height: 22px;
+        left: 0;
+        position: absolute;
+        top: 11px;
+        width: 22px;
+    }
+
+    /*create check symbol with pseudo element*/
+    input + label::after {
+        content: "";
+        border: 2px solid;
+        border-left: 0;
+        border-top: 0;
+        height: 10px;
+        left: 8px;
+        opacity: 0;
+        position: absolute;
+        top: 15px;
+        transform: rotate(45deg);
+        transition: opacity 0.2s ease-in-out;
+        width: 6px;
+    }
+
+    /*reveal check for 'on' state*/
+    input:checked + label::after {
+        opacity: 1;
+    }
+
+}
+
+@media(min-width: 720px){
+    .contactForm{
+        &--cidade{
+            width: 65%;
+        }
+        &--estado{
+            width: 35%;
+        }
+        &--checkTermsLabel{
+            margin-top: 0;
+        }
+        &--pais{
+            width: 50%;
+        }
+    
+    }
+}

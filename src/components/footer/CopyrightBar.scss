@@ -1,0 +1,18 @@
+.copyright{
+    height: 3em;
+    &--text{
+        font-size: 12px;
+        a,
+        a:visited,
+        a:active,
+        a:hover{
+        	color: #212529;
+        }
+    }
+    .socialNetworkings{
+        margin-left: 30px;
+    }
+}
+@media(min-width: 720px){
+
+}
